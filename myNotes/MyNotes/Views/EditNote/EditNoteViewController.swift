@@ -51,7 +51,7 @@ class EditNoteViewController: UIViewController {
  
 extension EditNoteViewController: UITextViewDelegate {
     func textViewDidEndEditing(_ textView: UITextView) {
-        note?.text = textView.text
+        note?.text = textView.text ?? "Hello"
         if note?.title.isEmpty ?? true {
             deleteNote()
         } else {
