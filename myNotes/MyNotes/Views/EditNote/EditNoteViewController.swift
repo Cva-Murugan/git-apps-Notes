@@ -48,7 +48,7 @@ class EditNoteViewController: UIViewController {
 }
 
 // MARK:- UITextView Delegate
-
+ 
 extension EditNoteViewController: UITextViewDelegate {
     func textViewDidEndEditing(_ textView: UITextView) {
         note?.text = textView.text
