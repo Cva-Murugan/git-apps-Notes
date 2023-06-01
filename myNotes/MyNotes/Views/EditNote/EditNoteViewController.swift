@@ -55,7 +55,7 @@ extension EditNoteViewController: UITextViewDelegate {
         if note?.title.isEmpty ?? true {
             deleteNote()
         } else {
-            updateNote() 
+            updateNote()
         }
     }
 }

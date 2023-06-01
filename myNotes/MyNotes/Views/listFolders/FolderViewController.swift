@@ -9,16 +9,6 @@ class FolderViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-// passing
-
-//    var foldersArr : [Folder]?
-//    var notesArr: [Note]?
-//    lazy var life:[Note] = {
-//        return self.noteObj.allNotes
-//    }()
-    
-//    var noteObj = ListNotesViewController()
-//    var notesInFolder :[[Note]]?
     
     let context = DataManager.shared.persistentContainer.viewContext
     var folder: Folder?
@@ -29,27 +19,11 @@ class FolderViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        notesInFolder = noteObj.collectionOfNote
-
         tableView.delegate = self
         tableView.dataSource = self
         
         self.fetchData()
     }
-    
-    
-    
-    
-//    func hit(){
-//
-//        var fol = Folder(context: context)
-//        var note = Note(context: context)
-//        foldersArr?.append(fol)
-//        notesArr?.append(note)
-//
-//        var folderNotes = noteObj.allNotes[0]
-//
-//    }
     
     
     func fetchData(){
@@ -107,14 +81,7 @@ extension FolderViewController:UITableViewDelegate,UITableViewDataSource{
         let cell = (tableView.dequeueReusableCell(withIdentifier: "cell") as! FolderTableViewCell)
             
         cell.folder.text = allFolder[indexPath.row].name
-        
-//        let allNotes = DataManager.shared.fetchNotes(filter: allFolder[indexPath.row].id)
-//
-//        cell.notesCount.text = allNotes.count.description
-        
-//        cell.notesCount.text = String(notesInFolder![indexPath.row].count) //?? ""
-        
-        cell.notesCount.text = ""
+     cell.notesCount.text = ""
             return cell
     }
     
@@ -122,10 +89,7 @@ extension FolderViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyBoard = UIStoryboard(name: "Main", bundle: nil)
         let vc = storyBoard.instantiateViewController(identifier: "notesVc") as! ListNotesViewController
-        
-        // todo   pass arrays as value to next viewcontroller
-//        vc.filteredNotes = notesInFolder![indexPath.row]
-        
+       
         vc.index = indexPath.row
         vc.folder = allFolder[indexPath.row]
         

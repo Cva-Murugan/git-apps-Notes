@@ -7,16 +7,9 @@ protocol ListNotesDelegate: AnyObject {
     func deleteNote(with id: UUID)
 }
 
-//protocol noteDataDelegate{
-//    var test: Int {get}
-//
-//}
 
 class ListNotesViewController: UIViewController {
-    
-    
-//    var delegate: noteDataDelegate?
-    
+
     @IBOutlet weak private var tableView: UITableView!
     @IBOutlet weak private var notesCountLbl: UILabel!
     
@@ -26,7 +19,7 @@ class ListNotesViewController: UIViewController {
     
     var folder: Folder?
     var filteredNotes: [Note] = []
-//    var collectionOfNote:[[Note]] = []
+
     
      var allNotes: [Note] = [] {
         didSet {
@@ -52,10 +45,6 @@ class ListNotesViewController: UIViewController {
         fetchNotesFromStorage()
     }
     
-//    func appendNotesInCollection() {
-//        collectionOfNote.append(filteredNotes)
-//    }
-//
     private func indexForNote(id: UUID, in list: [Note]) -> IndexPath {
         let row = Int(list.firstIndex(where: { $0.id == id }) ?? 0)
         return IndexPath(row: row, section: 0)

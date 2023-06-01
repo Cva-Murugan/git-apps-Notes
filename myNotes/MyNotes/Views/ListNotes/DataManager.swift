@@ -18,7 +18,7 @@ class DataManager{
             return container
         }()
           
-//    let viewcontext = persistentContainer.viewContext
+
     
         func saveContext () {
             let context = persistentContainer.viewContext
