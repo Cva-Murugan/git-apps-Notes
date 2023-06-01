@@ -18,7 +18,6 @@
 		124C53B226CE9F1000FDD253 /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124C53B126CE9F1000FDD253 /* Date+Extension.swift */; };
 		982D095D2A260FC400A120D2 /* FolderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982D095C2A260FC400A120D2 /* FolderViewController.swift */; };
 		982D095F2A260FEF00A120D2 /* FolderTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982D095E2A260FEF00A120D2 /* FolderTableViewCell.swift */; };
-		982D09692A26238D00A120D2 /* FolderDataManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 982D09682A26238D00A120D2 /* FolderDataManger.swift */; };
 		989289B82A25C7E500C52414 /* MyNotes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 989289B62A25C7E500C52414 /* MyNotes.xcdatamodeld */; };
 		989289BE2A25CDC500C52414 /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 989289BD2A25CDC500C52414 /* DataManager.swift */; };
 		98EC9FE42A2753F8000D3715 /* Folder+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 98EC9FE02A2753F8000D3715 /* Folder+CoreDataClass.swift */; };
@@ -41,7 +40,6 @@
 		124C53B126CE9F1000FDD253 /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
 		982D095C2A260FC400A120D2 /* FolderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderViewController.swift; sourceTree = "<group>"; };
 		982D095E2A260FEF00A120D2 /* FolderTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderTableViewCell.swift; sourceTree = "<group>"; };
-		982D09682A26238D00A120D2 /* FolderDataManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FolderDataManger.swift; sourceTree = "<group>"; };
 		989289B72A25C7E500C52414 /* MyNotes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MyNotes.xcdatamodel; sourceTree = "<group>"; };
 		989289BD2A25CDC500C52414 /* DataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
 		98EC9FE02A2753F8000D3715 /* Folder+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Folder+CoreDataClass.swift"; sourceTree = "<group>"; };
@@ -146,7 +144,6 @@
 			children = (
 				982D095C2A260FC400A120D2 /* FolderViewController.swift */,
 				982D095E2A260FEF00A120D2 /* FolderTableViewCell.swift */,
-				982D09682A26238D00A120D2 /* FolderDataManger.swift */,
 			);
 			path = listFolders;
 			sourceTree = "<group>";
@@ -235,7 +232,6 @@
 				982D095D2A260FC400A120D2 /* FolderViewController.swift in Sources */,
 				989289BE2A25CDC500C52414 /* DataManager.swift in Sources */,
 				982D095F2A260FEF00A120D2 /* FolderTableViewCell.swift in Sources */,
-				982D09692A26238D00A120D2 /* FolderDataManger.swift in Sources */,
 				98EC9FE72A2753F8000D3715 /* Note+CoreDataProperties.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
