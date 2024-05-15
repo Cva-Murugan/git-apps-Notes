@@ -71,4 +71,4 @@ This app template was created with ❤️ by Cva-Murugan(https://github.com/Cva-
 
 ## Support
 
-If you have any questions or need assistance, feel free to contact me at [sivamct1531@gmail.coml](mailto:sivamct1531@gmail.com).
+If you have any questions or need assistance, feel free to contact me at [sivamct1531@gmail.coml](mailto:sivamurugan1806@gmail.com).
